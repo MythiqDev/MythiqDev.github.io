@@ -3,97 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter-like Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        header {
-            background-color: #00aced;
-            color: #fff;
-            padding: 10px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .tweet {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-
-        .user-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #00aced;
-            color: #fff;
-            text-align: center;
-            line-height: 50px;
-            font-size: 24px;
-            margin-right: 10px;
-        }
-
-        .tweet-content {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .tweet-text {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .tweet-meta {
-            font-size: 14px;
-            color: #555;
-        }
-
-        .tweet-actions {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-    </style>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Twitter-like Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <div class="tweet">
-            <div class="user-avatar">@User1</div>
-            <div class="tweet-content">
-                <div class="tweet-text">This is a sample tweet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                <div class="tweet-meta">Posted 5 minutes ago</div>
-                <div class="tweet-actions">
-                    <button>Like</button>
-                    <button>Retweet</button>
-                </div>
-            </div>
+
+    <section id="hero">
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Creative Thinker</p>
+        <a href="#contact" class="cta-button">Contact Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio website. I'm a passionate web developer and designer with a strong love for creating beautiful and functional websites.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        
-        <div class="tweet">
-            <div class="user-avatar">@User2</div>
-            <div class="tweet-content">
-                <div class="tweet-text">Another sample tweet. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                <div class="tweet-meta">Posted 15 minutes ago</div>
-                <div class="tweet-actions">
-                    <button>Like</button>
-                    <button>Retweet</button>
-                </div>
-            </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Proin non libero vitae mi venenatis tincidunt.</p>
         </div>
-    </div>
+        <!-- Add more projects here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to collaborate or just say hi, feel free to reach out to me!</p>
+        <a href="mailto:youremail@example.com" class="cta-button">Email Me</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
 </body>
 </html>
