@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTube - Watch Videos</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Media Gallery</title>
 </head>
 <body>
     <header>
-        <h1>Media Gallery</h1>
-    </header>
-    <main>
-        <section class="media-item">
-            <img src="image1.jpg" alt="Image 1">
-            <div class="media-description">
-                <h2>Image 1</h2>
-                <p>A beautiful image</p>
+        <nav>
+            <div class="logo">
+                <img src="youtube-logo.png" alt="YourTube Logo">
             </div>
-        </section>
-        
-        <section class="media-item">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="media-description">
-                <h2>Video 1</h2>
-                <p>A sample video</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+            </div>
+            <div class="user-menu">
+                <button>Sign In</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="video">
+            <div class="video-player">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h1>Video Title</h1>
+                <p>Views: 1,000,000 • Uploaded: Sep 1, 2023</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
             </div>
         </section>
 
-        <!-- Add more media items here -->
+        <section class="video-list">
+            <!-- Repeat this block for more video thumbnails -->
+            <div class="video-thumbnail">
+                <img src="video-thumbnail.jpg" alt="Video Thumbnail">
+                <h2>Video Title</h2>
+                <p>Views: 500,000</p>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Your Name</p>
+        <p>&copy; 2023 YourTube</p>
     </footer>
 </body>
 </html>
