@@ -3,49 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourTube - Watch Videos</title>
+    <title>Video Search - YouTube Clone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="youtube-logo.png" alt="YourTube Logo">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search">
-                <button>Search</button>
-            </div>
-            <div class="user-menu">
-                <button>Sign In</button>
-            </div>
-        </nav>
+        <h1>YouTube Clone</h1>
+        <input type="text" id="search" placeholder="Search videos...">
     </header>
-
     <main>
-        <section class="video">
-            <div class="video-player">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-details">
-                <h1>Video Title</h1>
-                <p>Views: 1,000,000 • Uploaded: Sep 1, 2023</p>
-                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            </div>
-        </section>
-
-        <section class="video-list">
-            <!-- Repeat this block for more video thumbnails -->
-            <div class="video-thumbnail">
-                <img src="video-thumbnail.jpg" alt="Video Thumbnail">
-                <h2>Video Title</h2>
-                <p>Views: 500,000</p>
-            </div>
+        <section id="video-list">
+            <!-- Video search results will go here -->
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2023 YourTube</p>
+        <p>&copy; 2023 YouTube Clone</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
